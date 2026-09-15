@@ -10,31 +10,52 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: hinet1.2yly.com
-  port: 24215
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe
+  server: 172.67.130.144
+  port: 443
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
   tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
+  servername: ez-1bc8ab.sekiro-c18.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: ez-1bc8ab.sekiro-c18.workers.dev
+- name: 🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe
+  server: 104.21.78.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
+  tls: true
+  servername: summer-meadow-af5b.woowoorrrkk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 02 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
