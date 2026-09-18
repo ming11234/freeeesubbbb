@@ -6,26 +6,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
       "server": "185.255.179.11",
       "server_port": 9443,
       "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
@@ -37,6 +17,27 @@
       "transport": {
         "type": "grpc",
         "service_name": "fi02-grpc-8e47a"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "31.76.245.13",
+      "server_port": 443,
+      "uuid": "8f9c5260-9456-472b-8ee2-444500ba6cab",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "poland.snappycore.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SCuasCPva4lPGu-QRP955zZB8f6i7ydHBQh6bsSlrgo",
+          "short_id": "3d87c490ddd41305"
+        }
       }
     },
     {
