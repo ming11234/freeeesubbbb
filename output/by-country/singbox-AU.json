@@ -4,15 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "103.75.119.126",
-      "server_port": 2087,
-      "uuid": "731f177e-00aa-480c-b935-661456139a32",
-      "transport": {
-        "type": "ws",
-        "path": "/7586c69d3dc9"
-      }
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "vless",
@@ -36,15 +33,14 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "82.115.31.187",
-      "server_port": 36900,
-      "password": "ap5201314",
-      "tls": {
-        "enabled": true,
-        "server_name": "82.115.31.187",
-        "insecure": true
+      "server": "103.75.119.126",
+      "server_port": 2087,
+      "uuid": "731f177e-00aa-480c-b935-661456139a32",
+      "transport": {
+        "type": "ws",
+        "path": "/7586c69d3dc9"
       }
     },
     {
@@ -58,7 +54,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
