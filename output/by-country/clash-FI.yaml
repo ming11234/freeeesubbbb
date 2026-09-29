@@ -16,7 +16,7 @@ proxies:
     public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
     short-id: d345ad4657adeef9
   servername: google.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 95.216.27.15
   port: 2053
@@ -54,27 +54,6 @@ proxies:
     short-id: 7a0300af51a1c4cf
   servername: Miro.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: sw-01.vacvps.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 84a3061b-3573-4a3c-a631-f26c31209268
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bDAry75taTMaPJII9vRrJuXAjQglTJxCOVWraQ5BozY
-  servername: sw-01.vacvps.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 65.109.249.114
-  port: 80
-  udp: true
-  type: vless
-  uuid: 794990ea-dc34-4eff-8a43-020a92fec381
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,8 +63,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,7 +72,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
