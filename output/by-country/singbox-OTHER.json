@@ -4,24 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
-      "server": "89.125.96.93",
-      "server_port": 2053,
-      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "guanwang.awsno.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "wss.zazazuza.ru",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/",
+        "path": "/hls/cctv5phd.m3u8",
         "headers": {
-          "Host": "wss.zazazuza.ru"
+          "Host": "guanwang.awsno.com"
         }
       }
     },
@@ -30,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
