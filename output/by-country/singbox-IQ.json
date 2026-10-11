@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "31.207.7.74",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "188.114.98.134",
       "server_port": 443,
-      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ba49d874-fe02-465d-82d3-ed981dc7694f",
       "tls": {
         "enabled": true,
-        "server_name": "pkg.go.dev",
+        "server_name": "o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s",
-          "short_id": "457ae5b8bef4d1b3"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
