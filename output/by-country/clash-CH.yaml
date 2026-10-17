@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 132.243.175.144
-  port: 8388
+  server: 86.106.84.194
+  port: 13261
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  cipher: aes-128-gcm
+  password: 2bf536a4bd6008511734a505d248de2c
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 140.238.213.114
   port: 50160
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
+  sni: 140.238.213.114
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 138.124.63.224
@@ -48,12 +48,12 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 86.106.84.194
-  port: 13261
+  server: 132.243.175.144
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: 2bf536a4bd6008511734a505d248de2c
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
   server: freefl.aiage.work
   port: 443
@@ -67,29 +67,6 @@ proxies:
     short-id: ff0ddf949624ef2a
   servername: freefl.aiage.work
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  server: 104.165.205.42
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 990c8eb6-4c4e-4277-8602-79af8402cdd0
-  sni: speedtestmark.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: 5d85c2e3-cb03-4ec4-b068-bd6ad778c02f
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,8 +78,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,7 +89,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 07 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 08 - xiaohe
 rules:
 - MATCH,PROXIES
