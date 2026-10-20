@@ -16,9 +16,9 @@ proxies:
     public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
     short-id: cff998a4
   servername: www.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
