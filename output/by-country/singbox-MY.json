@@ -31,7 +31,7 @@
       "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
       "server": "forwarded.frnhk.xyz",
       "server_port": 53002,
-      "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa",
+      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
