@@ -36,12 +36,12 @@ proxies:
   sni: in002.zestapp778.com
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 172.105.39.124
-  port: 7002
+  server: 139.84.166.47
+  port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: GEdoeeqLZtkJRgSa
 proxy-groups:
 - name: PROXIES
   type: select
