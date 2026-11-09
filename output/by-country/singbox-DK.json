@@ -5,24 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "170.114.46.6",
-      "server_port": 2096,
-      "uuid": "efd11a89-7506-44ce-95b6-6654859f155b",
+      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
+      "server": "193.233.253.180",
+      "server_port": 8444,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
       "tls": {
         "enabled": true,
-        "server_name": "pcloud.z-tas.com",
-        "insecure": false,
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
         }
       },
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "pcloud.z-tas.com"
-        }
+        "type": "grpc",
+        "service_name": "GunService"
       }
     },
     {
@@ -30,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
