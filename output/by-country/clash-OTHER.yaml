@@ -5,16 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.63.142
-  port: 2052
+  server: 172.67.217.240
+  port: 443
   udp: true
   type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /tyxyws
     headers:
-      Host: eu02.123450908.xyz
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
