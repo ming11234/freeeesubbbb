@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -28,22 +28,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 147.93.171.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 591e7de6-f2dd-4ff9-ae21-8e00d5affa2a
-  tls: true
-  servername: 147-93-171-8.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vpn-live
-    headers:
-      Host: 147-93-171-8.sslip.io
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 13.140.253.35
+  server: 13.140.74.242
   port: 443
   udp: true
   type: vless
@@ -65,7 +50,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +58,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
 rules:
 - MATCH,PROXIES
